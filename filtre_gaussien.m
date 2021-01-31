@@ -4,7 +4,7 @@ function [imageResult] = filtre_gaussien(taille, sigma, imageInput)
 filtre=zeros(taille,taille);
 for i= 1:taille
     for j= 1:taille
-        filtre(i,j)= (1 / (sigma * sqrt(2 * pi))) * exp(-(((i - ceil(N / 2))^2 + (j - ceil(N / 2))^2) / (2 * sigma^2)));
+        filtre(i,j)= (1 / (sigma * sqrt(2 * pi))) * exp(-(((i - ceil(taille / 2))^2 + (j - ceil(taille / 2))^2) / (2 * sigma^2)));
     end
 end
 

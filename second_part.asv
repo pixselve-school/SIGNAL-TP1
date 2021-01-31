@@ -1,0 +1,7 @@
+A = imread('assets/lena.bmp');
+oneChannel = rgb2gray(A);
+
+real = double(oneChannel);
+colormap(gray);
+
+for i= 1:taille
